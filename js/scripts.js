@@ -1,23 +1,21 @@
 //biz logic
 
+var number = $("input#number").val();
+var numbers = [];
+
+for (i = 0; i <= number; i++) {
+  numbers.push(i);
+}
 
 var numbersRange = function(number) {
-  for (var index = 0; index < number; index += 1) {
-    console.log(index);
   if (number.includes(1)) {
     var numberOne = "boop";
-  }
     return numberOne;
+  } else if (number.includes(0)) {
+    var numberZero = "beep";
+    return numberZero;
   }
 };
-
-
-  /*/} else if (number.includes(0)) {
-    var numberZero = number.push("beep");
-  }
-}
-};/*/
-
 
 
 //ui logic
