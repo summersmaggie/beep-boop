@@ -1,18 +1,23 @@
 //biz logic
 
-/*/var newNumber = function(number) {
-  if (number.includes(charAt[1])) {
-    re
-  }
 
+var numbersRange = function(number) {
+  for (var index = 0; index < number; index += 1) {
+    console.log(index);
   if (number.includes(1)) {
-  newNumber.push("boop");
-
-  for (var i = 0; i < 10; i++) {
-    //total += 10;
+    var numberOne = "boop";
   }
-  alert("Your range is: " + newNumber);
+    return numberOne;
+  }
+};
+
+
+  /*/} else if (number.includes(0)) {
+    var numberZero = number.push("beep");
+  }
+}
 };/*/
+
 
 
 //ui logic
@@ -21,17 +26,9 @@ $(document).ready(function() {
     event.preventDefault();
 
     var number = $("input#number").val();
-    var rangeNumbers = "";
-    var i;
+    var result = numbersRange(number);
 
-    for (i = 0; i < number; i++) {
-      //console.log(i);
-    }
-
-    $(".result").text(result);
-    //var number = $("input#number").val();
-    //var result = newNumber(number);
-
+    $("#result").text(result);
     $("#formOne").trigger("reset");
   });
 });
