@@ -1,13 +1,14 @@
 //biz logic
 
-var number = $("input#number").val();
-var numbers = [];
+var array = [];
 
-for (i = 0; i <= number; i++) {
-  numbers.push(i);
+var numberRange = function(number) {
+  for (var index = 0; index < number; index += 1) {
+  console.log(index); 
 }
+};
 
-var numbersRange = function(number) {
+/*/var numberOutput = function(number) {
   if (number % 3 === 0) {
     var divisibleThree = "I'm sorry, Dave. I'm afraid I can't do that.";
     return divisibleThree;
@@ -20,7 +21,7 @@ var numbersRange = function(number) {
   } else {
     return ("can't compute yet")
   }
-};
+};/*/
 
 
 //ui logic
@@ -29,7 +30,7 @@ $(document).ready(function() {
     event.preventDefault();
 
     var number = $("input#number").val();
-    var result = numbersRange(number);
+    var result = numberRange(number);
 
     $("#result").text(result);
     $("#formOne").trigger("reset");
