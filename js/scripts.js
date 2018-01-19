@@ -8,12 +8,17 @@ for (i = 0; i <= number; i++) {
 }
 
 var numbersRange = function(number) {
-  if (number.includes(1)) {
+  if (number % 3 === 0) {
+    var divisibleThree = "I'm sorry, Dave. I'm afraid I can't do that.";
+    return divisibleThree;
+  } else if (number.includes(1)) {
     var numberOne = "boop";
     return numberOne;
   } else if (number.includes(0)) {
     var numberZero = "beep";
     return numberZero;
+  } else {
+    return ("can't compute yet")
   }
 };
 
