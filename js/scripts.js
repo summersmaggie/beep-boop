@@ -4,9 +4,11 @@ var array = [];
 
 var numberRange = function(number) {
   for (var index = 0; index < number; index += 1) {
-  console.log(index); 
-}
+    array.push(index);
+  }
+  return array;
 };
+
 
 /*/var numberOutput = function(number) {
   if (number % 3 === 0) {
