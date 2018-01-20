@@ -24,13 +24,8 @@ _This program takes an numerical input from the user and returns a range of numb
 
 ## Setup/Installation Requirements
 
-* Link to gh pages
-* View code here:
-* Download code here:
-* _easy-to-understand_
-* _format_
-
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
+* View and play with program here: https://summersmaggie.github.io/beep-boop/
+* View and download code here: https://github.com/summersmaggie/beep-boop
 
 ## Support and contact details
 
